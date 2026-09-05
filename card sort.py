@@ -6,7 +6,6 @@ cards = [
     "king of clubs",
 ]
 
-# Lower number means earlier in the sorted order
 value_order = {
     "ace": 1,
     "two": 2,
@@ -38,7 +37,7 @@ def card_key(card):
 
 swaps = 0
 
-# Insertion sort, based on the starter code
+# Insertion sort
 for index in range(1, len(cards)):
     current_card = cards[index]
     position = index
